@@ -10,7 +10,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -20,7 +19,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -121,27 +119,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1630}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 1898}
     - Class: 114
-      Script: {instanceID: 3166}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 3516}
+      Script: {instanceID: 3168}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 3518}
     - Class: 114
-      Script: {instanceID: 6726}
+      Script: {instanceID: 3876}
     - Class: 114
-      Script: {instanceID: 6940}
+      Script: {instanceID: 6012}
     - Class: 114
-      Script: {instanceID: 7346}
+      Script: {instanceID: 6030}
     - Class: 114
-      Script: {instanceID: 8070}
+      Script: {instanceID: 6732}
     - Class: 114
-      Script: {instanceID: 9678}
+      Script: {instanceID: 6946}
     - Class: 114
-      Script: {instanceID: 9682}
+      Script: {instanceID: 7352}
     - Class: 114
-      Script: {instanceID: 9686}
+      Script: {instanceID: 8076}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -182,29 +180,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1630}
     - Class: 114
-      Script: {instanceID: 2356}
+      Script: {instanceID: 2358}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 3166}
+      Script: {instanceID: 3168}
     - Class: 114
-      Script: {instanceID: 3516}
+      Script: {instanceID: 3518}
     - Class: 114
-      Script: {instanceID: 4788}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 5106}
+      Script: {instanceID: 5110}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 6030}
     - Class: 114
-      Script: {instanceID: 6534}
+      Script: {instanceID: 6540}
     - Class: 114
-      Script: {instanceID: 6726}
+      Script: {instanceID: 6732}
     - Class: 114
-      Script: {instanceID: 6940}
+      Script: {instanceID: 6946}
     - Class: 114
-      Script: {instanceID: 7346}
+      Script: {instanceID: 7352}
     - Class: 114
-      Script: {instanceID: 8034}
+      Script: {instanceID: 8040}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -276,6 +274,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionStayMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 1a415ca2779497855d8d7c9ef6e9896f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: f854af586011dd194574f89546642e29
@@ -534,6 +538,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSelectMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: cd95cd8dc1fe6ad42758bcc18a9a027e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Spawner
   - hash:
       serializedVersion: 2
       Hash: 5b8b7230ad968399f6726aa1269dcdcb
@@ -810,6 +820,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerExitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a3d79b96a8b4cddf5b28909222160c57
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Controller
   - hash:
       serializedVersion: 2
       Hash: 17f82e3e7d8f8b07a270a4aad9bfe79d
@@ -1224,24 +1240,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 22909073f26a9747cd826a23fe2b0420
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Controller
-  - hash:
-      serializedVersion: 2
-      Hash: cd95cd8dc1fe6ad42758bcc18a9a027e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Spawner
-  - hash:
-      serializedVersion: 2
-      Hash: 1a415ca2779497855d8d7c9ef6e9896f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
