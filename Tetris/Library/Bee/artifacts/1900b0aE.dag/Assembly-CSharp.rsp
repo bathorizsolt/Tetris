@@ -373,8 +373,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Controller.cs"
-"Assets/Spawner.cs"
+"Assets/Scripts/Game/Controller.cs"
+"Assets/Scripts/Game/ExitToMenuButton.cs"
+"Assets/Scripts/Game/GameManager.cs"
+"Assets/Scripts/Game/Spawner.cs"
+"Assets/Scripts/Menu/ExitButton.cs"
+"Assets/Scripts/Menu/StartButton.cs"
 -langversion:9.0
 
 /deterministic
