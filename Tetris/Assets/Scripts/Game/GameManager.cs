@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
         ScoreDisplayText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(false);
         MenuButton.gameObject.SetActive(false);
-
         score = 0;
         spawner = spawnerGameObject.GetComponent<Spawner>();
         spawner.GetRandom();
@@ -44,6 +43,7 @@ public class GameManager : MonoBehaviour
         MenuButton.gameObject.SetActive(true);
         FinalScoreText.text = "Score: " + score.ToString();
         spawner.StopSpawning();
+        
 
         if (background != null)
         {

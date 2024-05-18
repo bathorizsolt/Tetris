@@ -3,9 +3,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour
 {
     [SerializeField] public float PreTime;
-    private float initialFalltime = 0.8f;
-    private float currentFalltime;
-    private int blockCount = 0;
+    [SerializeField] public float Falltime = 0.8f;
     public static int height = 20;
     public static int width = 10;
     public Vector3 rotationPoint;
@@ -15,7 +13,6 @@ public class Controller : MonoBehaviour
     void Start()
     {
         GameManager = FindObjectOfType<GameManager>();
-        currentFalltime = initialFalltime;
     }
 
     void Update()
@@ -39,7 +36,7 @@ public class Controller : MonoBehaviour
                 transform.RotateAround(transform.TransformPoint(rotationPoint), new Vector3(0, 0, 1), -90);
         }
 
-        if (Time.time - PreTime > (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) ? initialFalltime / 15 : initialFalltime))
+        if (Time.time - PreTime > (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S) ? Falltime / 15 : Falltime))
         {
             transform.position += new Vector3(0, -1, 0);
             if (!IsValidMove())
@@ -58,19 +55,6 @@ public class Controller : MonoBehaviour
                 }
             }
             PreTime = Time.time;
-           
-            if (transform.hasChanged)
-            {
-                blockCount++;
-                transform.hasChanged = false;
-            }
-
-            if (blockCount >= 10)
-            {
-                currentFalltime = initialFalltime - Time.time * 0.1f;
-
-                currentFalltime = Mathf.Max(currentFalltime, 0.1f);
-            }
         }
     }
 
@@ -99,7 +83,6 @@ public class Controller : MonoBehaviour
             {
                 RemoveLine(i);
                 RowMove(i);
-                GameManager.AddScore(100);
             }
         }
     }
@@ -121,7 +104,7 @@ public class Controller : MonoBehaviour
             Destroy(grid[j, i].gameObject);
             grid[j, i] = null;
 
-            FindObjectOfType<GameManager>().AddScore(100);
+            FindObjectOfType<GameManager>().AddScore(10);
         }
     }
 
