@@ -276,7 +276,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionStayMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 1a415ca2779497855d8d7c9ef6e9896f
+      Hash: 4cd15bb484191b498fd5c86632853847
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
