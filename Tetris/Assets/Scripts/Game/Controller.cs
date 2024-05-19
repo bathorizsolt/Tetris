@@ -56,6 +56,7 @@ public class Controller : MonoBehaviour
             }
             PreTime = Time.time;
         }
+        SetSpeed();
     }
 
     void AddtoGrid()
@@ -72,6 +73,7 @@ public class Controller : MonoBehaviour
             }
 
             grid[roundedX, roundedY] = child;
+
         }
     }
 
@@ -139,7 +141,33 @@ public class Controller : MonoBehaviour
         }
         return true;
     }
-
+    void SetSpeed()
+    {
+        if (GameManager.score >= 500 && GameManager.score < 1000)
+        {
+            Falltime = 0.7f;
+        }
+        else if (GameManager.score >= 1000 && GameManager.score < 1500)
+        {
+            Falltime = 0.6f;
+        }
+        else if (GameManager.score >= 1500 && GameManager.score < 2000)
+        {
+            Falltime = 0.6f;
+        }
+        else if (GameManager.score >= 2000 && GameManager.score < 2500)
+        {
+            Falltime = 0.5f;
+        }
+        else if (GameManager.score >= 2500 && GameManager.score < 3000)
+        {
+            Falltime = 0.4f;
+        }
+        else if (GameManager.score >= 3000)
+        {
+            Falltime = 0.3f;
+        }
+    }
     bool IsGameOver()
     {
         foreach (Transform child in transform)

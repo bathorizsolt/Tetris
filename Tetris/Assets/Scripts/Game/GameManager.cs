@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public Button restartButton;
     public Button MenuButton;
     public GameObject spawnerGameObject;
-    private int score;
+    public int score;
     private Spawner spawner;
     public GameObject background;
 
@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
         score = 0;
         spawner = spawnerGameObject.GetComponent<Spawner>();
         spawner.GetRandom();
-        UpdateScoreDisplay();
     }
 
     public void AddScore(int points)
@@ -56,9 +55,10 @@ public class GameManager : MonoBehaviour
         restartButton.gameObject.SetActive(true);
     }
 
-    void UpdateScoreDisplay()
+    public void UpdateScoreDisplay()
     {
         ScoreDisplayText.text = "Score: " + score.ToString();
+
     }
 
     public void RestartGame()

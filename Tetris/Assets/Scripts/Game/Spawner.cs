@@ -4,6 +4,7 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] public GameObject[] BlockPrefabs;
     private bool gameOver = false;
+    private GameManager GameManager;
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class Spawner : MonoBehaviour
         {
             Instantiate(BlockPrefabs[Random.Range(0, BlockPrefabs.Length)], transform.position, Quaternion.identity);
         }
+
     }
 
     public void StopSpawning()
