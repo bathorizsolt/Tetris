@@ -51,7 +51,7 @@ public class Controller : MonoBehaviour
                 else
                 {
                     this.enabled = false;
-                    FindObjectOfType<Spawner>().GetRandom();
+                    GameManager.GetRandom();
                 }
             }
             PreTime = Time.time;

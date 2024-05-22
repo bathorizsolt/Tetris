@@ -321,7 +321,6 @@
 "Assets/Scripts/Game/Controller.cs"
 "Assets/Scripts/Game/ExitToMenuButton.cs"
 "Assets/Scripts/Game/GameManager.cs"
-"Assets/Scripts/Game/Spawner.cs"
 "Assets/Scripts/Menu/ExitButton.cs"
 "Assets/Scripts/Menu/StartButton.cs"
 -langversion:9.0

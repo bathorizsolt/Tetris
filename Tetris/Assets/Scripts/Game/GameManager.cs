@@ -11,8 +11,9 @@ public class GameManager : MonoBehaviour
     public Button MenuButton;
     public GameObject spawnerGameObject;
     public int score;
-    private Spawner spawner;
     public GameObject background;
+    bool gameOver = false;
+    [SerializeField] public GameObject[] BlockPrefabs;
 
     void Start()
     {
@@ -22,10 +23,21 @@ public class GameManager : MonoBehaviour
         restartButton.gameObject.SetActive(false);
         MenuButton.gameObject.SetActive(false);
         score = 0;
-        spawner = spawnerGameObject.GetComponent<Spawner>();
-        spawner.GetRandom();
+        GetRandom();
+    }
+    public void GetRandom()
+    {
+        if (!gameOver)
+        {
+            Instantiate(BlockPrefabs[Random.Range(0, BlockPrefabs.Length)], spawnerGameObject.transform.position, Quaternion.identity);
+        }
+
     }
 
+    public void StopSpawning()
+    {
+        gameOver = true;
+    }
     public void AddScore(int points)
     {
         score += points;
@@ -41,8 +53,8 @@ public class GameManager : MonoBehaviour
         restartButton.gameObject.SetActive(true);
         MenuButton.gameObject.SetActive(true);
         FinalScoreText.text = "Score: " + score.ToString();
-        spawner.StopSpawning();
-        
+        StopSpawning();
+
 
         if (background != null)
         {

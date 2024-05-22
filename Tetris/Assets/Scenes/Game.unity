@@ -428,6 +428,14 @@ MonoBehaviour:
   spawnerGameObject: {fileID: 700330805}
   score: 0
   background: {fileID: 1915889014}
+  BlockPrefabs:
+  - {fileID: 1241962963890453791, guid: f1b184a855f8d6b4284779c7778b6b13, type: 3}
+  - {fileID: 3395832123822090190, guid: 9f4d9b29906341841930be9bb4c3255b, type: 3}
+  - {fileID: 4656980822534559951, guid: 2a16c18604a44a74b9a5e5dd8c49546f, type: 3}
+  - {fileID: 9085929482387386131, guid: 43ea9a0029b18b24daaa94dcde293b81, type: 3}
+  - {fileID: 4672661264167207931, guid: cc6c65a80ffc27a47a22d74787994c57, type: 3}
+  - {fileID: 4473303109165844001, guid: 78a0fda209feab344b709651fc99e94a, type: 3}
+  - {fileID: 7194587707138809850, guid: ffb6081c23c49214fb44f89cbe6f6c11, type: 3}
 --- !u!4 &380606103
 Transform:
   m_ObjectHideFlags: 0
