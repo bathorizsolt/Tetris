@@ -552,7 +552,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 700330807}
-  - component: {fileID: 700330808}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -575,26 +574,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &700330808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700330805}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85b3327c587d77045b3da8ec144c2164, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BlockPrefabs:
-  - {fileID: 1241962963890453791, guid: f1b184a855f8d6b4284779c7778b6b13, type: 3}
-  - {fileID: 3395832123822090190, guid: 9f4d9b29906341841930be9bb4c3255b, type: 3}
-  - {fileID: 4656980822534559951, guid: 2a16c18604a44a74b9a5e5dd8c49546f, type: 3}
-  - {fileID: 9085929482387386131, guid: 43ea9a0029b18b24daaa94dcde293b81, type: 3}
-  - {fileID: 4672661264167207931, guid: cc6c65a80ffc27a47a22d74787994c57, type: 3}
-  - {fileID: 4473303109165844001, guid: 78a0fda209feab344b709651fc99e94a, type: 3}
-  - {fileID: 7194587707138809850, guid: ffb6081c23c49214fb44f89cbe6f6c11, type: 3}
 --- !u!1 &755323670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,7 +1005,6 @@ GameObject:
   - component: {fileID: 1583239538}
   - component: {fileID: 1583239537}
   - component: {fileID: 1583239536}
-  - component: {fileID: 1583239539}
   m_Layer: 5
   m_Name: ExitToMenu
   m_TagString: Untagged
@@ -1098,8 +1076,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1583239539}
-        m_TargetAssemblyTypeName: ExitToMenuButton, Assembly-CSharp
+      - m_Target: {fileID: 380606102}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
@@ -1148,18 +1126,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1583239534}
   m_CullTransparentMesh: 1
---- !u!114 &1583239539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583239534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6008a8907b9064589fd14c2853460e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1629501421
 GameObject:
   m_ObjectHideFlags: 0
