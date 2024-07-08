@@ -3,7 +3,6 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Controller
     - ExitButton
-    - ExitToMenuButton
     - GameManager
     - StartButton
     Unity.2D.Animation.Editor.dll:
@@ -97,7 +96,7 @@ ScriptsOnlyBuild:
     fullTypeName: GameManager
     methodName: RestartGame
   - assembly: Assembly-CSharp
-    fullTypeName: ExitToMenuButton
+    fullTypeName: GameManager
     methodName: BackToMenu
   sceneClasses:
     Assets/Scenes/Game.unity:
@@ -128,19 +127,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3518}
     - Class: 114
-      Script: {instanceID: 3876}
+      Script: {instanceID: 6010}
     - Class: 114
-      Script: {instanceID: 6012}
+      Script: {instanceID: 6028}
     - Class: 114
-      Script: {instanceID: 6030}
+      Script: {instanceID: 6730}
     - Class: 114
-      Script: {instanceID: 6732}
+      Script: {instanceID: 6944}
     - Class: 114
-      Script: {instanceID: 6946}
-    - Class: 114
-      Script: {instanceID: 7352}
-    - Class: 114
-      Script: {instanceID: 8076}
+      Script: {instanceID: 7350}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -189,21 +184,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3518}
     - Class: 114
-      Script: {instanceID: 4792}
+      Script: {instanceID: 4790}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5108}
     - Class: 114
-      Script: {instanceID: 6030}
+      Script: {instanceID: 6028}
     - Class: 114
-      Script: {instanceID: 6540}
+      Script: {instanceID: 6538}
     - Class: 114
-      Script: {instanceID: 6732}
+      Script: {instanceID: 6730}
     - Class: 114
-      Script: {instanceID: 6946}
+      Script: {instanceID: 6944}
     - Class: 114
-      Script: {instanceID: 7352}
+      Script: {instanceID: 7350}
     - Class: 114
-      Script: {instanceID: 8040}
+      Script: {instanceID: 8038}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1043,12 +1038,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: PositionAsUV1
-  - hash:
-      serializedVersion: 2
-      Hash: f8fa37586423bd55e98b762efc8773a2
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ExitToMenuButton
   - hash:
       serializedVersion: 2
       Hash: 6a0b5b415c00f783202fd1ae2d556cb2
