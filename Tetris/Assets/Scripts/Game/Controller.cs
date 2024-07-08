@@ -104,10 +104,9 @@ public class Controller : MonoBehaviour
         for (int j = 0; j < width; j++)
         {
             Destroy(grid[j, i].gameObject);
-            grid[j, i] = null;
-
-            FindObjectOfType<GameManager>().AddScore(10);
+            grid[j, i] = null;   
         }
+        FindObjectOfType<GameManager>().AddScore(10);
     }
 
     void RowMove(int i)
@@ -143,29 +142,29 @@ public class Controller : MonoBehaviour
     }
     void SetSpeed()
     {
-        if (GameManager.score >= 500 && GameManager.score < 1000)
+        if (GameManager.score >= 50 && GameManager.score < 100)
         {
             Falltime = 0.7f;
         }
-        else if (GameManager.score >= 1000 && GameManager.score < 1500)
+        else if (GameManager.score >= 100 && GameManager.score < 150)
         {
             Falltime = 0.6f;
         }
-        else if (GameManager.score >= 1500 && GameManager.score < 2000)
-        {
-            Falltime = 0.6f;
-        }
-        else if (GameManager.score >= 2000 && GameManager.score < 2500)
+        else if (GameManager.score >= 150 && GameManager.score < 200)
         {
             Falltime = 0.5f;
         }
-        else if (GameManager.score >= 2500 && GameManager.score < 3000)
+        else if (GameManager.score >= 200 && GameManager.score < 250)
         {
             Falltime = 0.4f;
         }
-        else if (GameManager.score >= 3000)
+        else if (GameManager.score >= 250 && GameManager.score < 300)
         {
             Falltime = 0.3f;
+        }
+        else if (GameManager.score >= 300)
+        {
+            Falltime = 0.2f;
         }
     }
     bool IsGameOver()
