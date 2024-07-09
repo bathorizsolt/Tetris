@@ -9475,7 +9475,7 @@
       "DisplayName": "Copying unity default resources",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64arm64_player_nondevelopment_mono/UnityPlayer.app/Contents/Resources/unity default resources"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64_player_nondevelopment_mono/UnityPlayer.app/Contents/Resources/unity default resources"
       ],
       "Outputs": [
         "Render_MacOS.app/Contents/Resources/unity default resources"
@@ -9487,7 +9487,7 @@
       "DisplayName": "Writing UnityPlayer.dylib_76u6.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 152921,
-      "PayloadLength": 642,
+      "PayloadLength": 637,
       "PayloadDebugContentSnippet": "{\"UnityEditor.OSXStandalone.Co",
       "Inputs": [],
       "Outputs": [
@@ -9500,7 +9500,7 @@
       "DisplayName": "MacOSCodeSignDylibCopy UnityPlayer",
       "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.20f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.20f1\\Editor\\Data\\PlaybackEngines\\MacStandaloneSupport\\MacStandalonePlayerBuildProgram.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Bee;C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\UnityPlayer.dylib_76u6.info\"",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64arm64_player_nondevelopment_mono/UnityPlayer.app/Contents/Frameworks/UnityPlayer.dylib",
+        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64_player_nondevelopment_mono/UnityPlayer.app/Contents/Frameworks/UnityPlayer.dylib",
         "Library/Bee/artifacts/csharpactions/UnityPlayer.dylib_76u6.info",
         "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/MacOSCodeSigning.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/MacStandalonePlayerBuildProgram.Data.dll",
@@ -9527,7 +9527,7 @@
       "DisplayName": "Copying libMonoPosixHelper.dylib",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64arm64_player_nondevelopment_mono/UnityPlayer.app/Contents/Frameworks/libMonoPosixHelper.dylib"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64_player_nondevelopment_mono/UnityPlayer.app/Contents/Frameworks/libMonoPosixHelper.dylib"
       ],
       "Outputs": [
         "Render_MacOS.app/Contents/Frameworks/libMonoPosixHelper.dylib"
@@ -9539,7 +9539,7 @@
       "DisplayName": "Copying libmonobdwgc-2.0.dylib",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64arm64_player_nondevelopment_mono/UnityPlayer.app/Contents/Frameworks/libmonobdwgc-2.0.dylib"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64_player_nondevelopment_mono/UnityPlayer.app/Contents/Frameworks/libmonobdwgc-2.0.dylib"
       ],
       "Outputs": [
         "Render_MacOS.app/Contents/Frameworks/libmonobdwgc-2.0.dylib"
@@ -9551,7 +9551,7 @@
       "DisplayName": "Copying libmono-native.dylib",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64arm64_player_nondevelopment_mono/UnityPlayer.app/Contents/Frameworks/libmono-native.dylib"
+        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64_player_nondevelopment_mono/UnityPlayer.app/Contents/Frameworks/libmono-native.dylib"
       ],
       "Outputs": [
         "Render_MacOS.app/Contents/Frameworks/libmono-native.dylib"
@@ -9829,7 +9829,7 @@
       "Annotation": "WriteText Render_MacOS.app/Contents/Info.plist",
       "DisplayName": "Writing Info.plist",
       "ActionType": "WriteFile",
-      "PayloadOffset": 153631,
+      "PayloadOffset": 153626,
       "PayloadLength": 1511,
       "PayloadDebugContentSnippet": "<?xml version=\"1.0\" encoding=\"",
       "Inputs": [],
@@ -9842,8 +9842,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Tetris_er4m.info",
       "DisplayName": "Writing Tetris_er4m.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 155226,
-      "PayloadLength": 12856,
+      "PayloadOffset": 155221,
+      "PayloadLength": 12846,
       "PayloadDebugContentSnippet": "{\"MacOSCodeSignBundleInPlace+D",
       "Inputs": [],
       "Outputs": [
@@ -10009,7 +10009,7 @@
         "Render_MacOS.app/Contents/Resources/MainMenu.nib/designable.nib",
         "Render_MacOS.app/Contents/Resources/MainMenu.nib/keyedobjects.nib",
         "Render_MacOS.app/Contents/Info.plist",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64arm64_player_nondevelopment_mono/UnityPlayer.app/Contents/MacOS/UnityPlayer",
+        "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/Variations/macos_x64_player_nondevelopment_mono/UnityPlayer.app/Contents/MacOS/UnityPlayer",
         "Library/Bee/artifacts/csharpactions/Tetris_er4m.info",
         "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/MacOSCodeSigning.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.20f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/MacStandalonePlayerBuildProgram.Data.dll",
